@@ -27,5 +27,5 @@ export default function FourZeroFour() {
         </div>
       </div>
     </>
-  );
+  )
 }
