@@ -9,7 +9,7 @@ const NowPlayingSpotify = () => {
   })
   const { songUrl, title, artist } = response.data || {}
   return (
-    <div className="flex items-center bg-gray-800 py-2">
+    <div className="flex items-center py-2">
       <svg
         className="h-5.5 w-5.5 flex-shrink-0 text-spotify"
         role="img"
@@ -25,13 +25,13 @@ const NowPlayingSpotify = () => {
         {songUrl ? (
           <>
             <div className="mr-2 flex h-5 items-end pb-0.5 pt-1">
-              <div className="h-full w-0.5 animate-music-bar-1 bg-spotify"></div>
-              <div className="mx-0.5 h-1/2 w-0.5 animate-music-bar-2 bg-spotify"></div>
-              <div className="h-full w-0.5 animate-music-bar-3 bg-spotify"></div>
-              <div className="mx-0.5 h-1/2 w-0.5 animate-music-bar-4 bg-spotify"></div>
+              <div className="h-full w-0.5 animate-music-bar-1 bg-primary-400"></div>
+              <div className="mx-0.5 h-1/2 w-0.5 animate-music-bar-2 bg-primary-600"></div>
+              <div className="h-full w-0.5 animate-music-bar-3 bg-primary-400"></div>
+              <div className="mx-0.5 h-1/2 w-0.5 animate-music-bar-4 bg-primary-600"></div>
             </div>
             <a
-              className="font-medium text-gray-200"
+              className="font-medium text-gray-800 dark:text-gray-200"
               href={songUrl}
               target="_blank"
               rel="noopener noreferrer"
@@ -41,10 +41,10 @@ const NowPlayingSpotify = () => {
             </a>
           </>
         ) : (
-          <p className="font-medium text-gray-200">N'écoute pas</p>
+          <p className="font-medium text-gray-800 dark:text-gray-200">N'écoute pas</p>
         )}
-        <span className="mx-2 text-gray-300">{' – '}</span>
-        <p className="max-w-max truncate text-gray-300">{artist || 'Spotify'}</p>
+        <span className="mx-2 text-gray-600 dark:text-gray-300">{' – '}</span>
+        <p className="max-w-max truncate text-gray-600 dark:text-gray-300">{artist || 'Spotify'}</p>
       </div>
     </div>
   )
