@@ -1,4 +1,4 @@
-import { SPOTIFY_TOKEN_API, SPOTIFY_NOW_PLAYING_API, SPOTIFY_TOP_TRACKS_API } from '~/constant'
+import { SPOTIFY_TOKEN_API, SPOTIFY_NOW_PLAYING_API, SPOTIFY_TOP_TRACKS_API } from '../constants'
 
 const {
   SPOTIFY_CLIENT_ID: client_id,
