@@ -1,11 +1,9 @@
 const projectsData = [
   {
-    title: 'A Search Engine',
-    description: `What if you could look up any information in the world? Webpages, images, videos
-    and more. Google has many features to help you find exactly what you're looking
-    for.`,
+    title: 'Envie-Trine',
+    description: `Favoriser le commerce de proximité en proposant une marketplace Click&Collect aux commerçants, ainsi qu'aux clients.`,
     imgSrc: '/static/images/google.png',
-    href: 'https://www.google.com',
+    href: 'https://envie-trine.com',
   },
   {
     title: 'The Time Machine',
