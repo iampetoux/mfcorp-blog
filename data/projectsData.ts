@@ -6,12 +6,16 @@ const projectsData = [
     href: 'https://envie-trine.com',
   },
   {
-    title: 'The Time Machine',
-    description: `Imagine being able to travel back in time or to the future. Simple turn the knob
-    to the desired date and press "Go". No more worrying about lost keys or
-    forgotten headphones with this simple yet affordable solution.`,
-    imgSrc: '/static/images/time-machine.jpg',
-    href: '/blog/the-time-machine',
+    title: 'Parcours.io',
+    description: `Parcours est une application intuitive qui permet de créer des fiches réflexes. Les processus métier restent inchangés mais ils sont clarifiés et accessibles à tous les utilisateurs.`,
+    imgSrc: '/static/images/parcours.png',
+    href: 'https://parcours.io',
+  },
+  {
+    title: 'Mon Relevé Gaz',
+    description: `Mon Relevé Gaz propose aux clients de GRDF de communiquer les index de consommation des compteurs non communiquants à travers une plateforme, afin d'établir une facture provisoire. De l'autre côté, les agents ont accès à un back-office de gestion de la plateforme.`,
+    imgSrc: '/static/images/mon-releve-gaz.png',
+    href: 'https://monrelevegaz.p2b.cloud-grdf.fr/',
   },
 ]
 

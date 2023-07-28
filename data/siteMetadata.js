@@ -15,10 +15,10 @@ const siteMetadata = {
   socialBanner: '/static/images/twitter-card.png',
   email: 'maxime@mfcorp.fr',
   github: 'https://github.com/iampetoux',
-  twitter: 'https://twitter.com/Twitter',
+  twitter: 'https://twitter.com/maxiswage',
   facebook: 'https://facebook.com',
-  youtube: 'https://youtube.com',
-  linkedin: 'https://www.linkedin.com',
+  youtube: 'https://youtube.com/petoux',
+  linkedin: 'https://www.linkedin.com/in/maximeflm',
   locale: 'fr-FR',
   socialAccounts: {
     github: 'iampetoux',

@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+html.prevent-scroll {
+  overflow-y: hidden;
+}
+
 .task-list-item::before {
   @apply hidden;
 }
