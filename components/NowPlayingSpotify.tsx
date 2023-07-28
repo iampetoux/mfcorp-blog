@@ -25,10 +25,10 @@ const NowPlayingSpotify = () => {
         {songUrl ? (
           <>
             <div className="mr-2 flex h-5 items-end pb-0.5 pt-1">
-              <div className="h-full w-0.5 animate-music-bar-1 bg-primary-400"></div>
-              <div className="mx-0.5 h-1/2 w-0.5 animate-music-bar-2 bg-primary-600"></div>
-              <div className="h-full w-0.5 animate-music-bar-3 bg-primary-400"></div>
-              <div className="mx-0.5 h-1/2 w-0.5 animate-music-bar-4 bg-primary-600"></div>
+              <div className="h-full w-0.5 animate-music-bar-1 bg-green-400"></div>
+              <div className="mx-0.5 h-1/2 w-0.5 animate-music-bar-2 bg-green-600"></div>
+              <div className="h-full w-0.5 animate-music-bar-3 bg-green-400"></div>
+              <div className="mx-0.5 h-1/2 w-0.5 animate-music-bar-4 bg-green-600"></div>
             </div>
             <a
               className="font-medium text-gray-800 dark:text-gray-200"
