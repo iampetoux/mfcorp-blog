@@ -1,6 +1,3 @@
-import Image from 'next/image'
-import siteMetadata from '@/data/siteMetadata'
-import NowPlayingSpotify from '@/components/NowPlayingSpotify'
 import ProfileCard from '@/components/ProfileCard'
 
 const HeroBanner = () => {

@@ -21,7 +21,10 @@ export const getStaticProps = async () => {
 export default function Home({ posts }: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
     <>
-      <PageSEO title={`${siteMetadata.title} - Le blog de ${siteMetadata.author}`} description={siteMetadata.description} />
+      <PageSEO
+        title={`${siteMetadata.title} - Le blog de ${siteMetadata.author}`}
+        description={siteMetadata.description}
+      />
       <HeroBanner />
       <div className="divide-y divide-gray-200 dark:divide-gray-700">
         <div className="flex justify-between space-y-2 pt-6 pb-8 md:space-y-5">

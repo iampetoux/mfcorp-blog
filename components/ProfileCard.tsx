@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import siteMetadata from '@/data/siteMetadata'
 import NowPlayingSpotify from '@/components/NowPlayingSpotify'
 import ProfileInfos from '@/components/ProfileInfos'
 
