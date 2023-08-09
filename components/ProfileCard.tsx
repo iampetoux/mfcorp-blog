@@ -4,7 +4,7 @@ import ProfileInfos from '@/components/ProfileInfos'
 
 const ProfileCard = () => {
   return (
-    <div className="max-w-sm bg-white border overflow-hidden border-2 border-gray-200 transition-colors hover:border-primary-600 dark:hover:border-primary-400 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+    <div className="max-w-sm bg-white border overflow-hidden border-2 border-gray-200 transition-all hover:scale-110 duration-500 hover:border-primary-600 dark:hover:border-primary-400 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
       <Image
         alt="avatar"
         loading="lazy"
