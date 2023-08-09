@@ -4,10 +4,10 @@ import siteMetadata from '@/data/siteMetadata'
 import { formatDate } from 'pliny/utils/formatDate'
 import { sortedBlogPost, allCoreContent } from 'pliny/utils/contentlayer'
 import { InferGetStaticPropsType } from 'next'
-import { NewsletterForm } from 'pliny/ui/NewsletterForm'
 import { allBlogs } from 'contentlayer/generated'
 import type { Blog } from 'contentlayer/generated'
 import HeroBanner from '@/components/HeroBanner'
+import Image from 'next/image'
 
 const MAX_DISPLAY = 6
 
@@ -46,34 +46,37 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
         <div className="sm:grid gap-4 grid-cols-3 grid-rows-3 items-stretch">
           {!posts.length && 'No posts found.'}
           {posts.slice(0, MAX_DISPLAY).map((post) => {
-            const { slug, date, title } = post
+            const { slug, date, title, images } = post
             return (
               <Link
                 href={`/blog/${slug}`}
                 key={slug}
-                className="flex flex-col justify-between my-4 p-4 border-2 border-solid rounded-lg border-gray-200 dark:border-gray-800 transform hover:border-primary-600 dark:hover:border-primary-400"
+                className="flex flex-col my-4 p-4 border-2 border-solid rounded-lg border-gray-200 dark:border-gray-800 transform hover:border-primary-600 dark:hover:border-primary-400"
               >
-                <div>
-                  <h2 className="text-2xl font-bold leading-8 tracking-tight">
-                    <div className="text-gray-900 dark:text-gray-100">{title}</div>
-                  </h2>
-                </div>
+                <Image
+                  loading="lazy"
+                  className="rounded-lg mb-2 object-cover w-full h-[200px]"
+                  width="300"
+                  height="200"
+                  src={images ? images[0] : '/static/images/twitter-card.png'}
+                  alt={title}
+                />
                 <dl>
                   <dt className="sr-only">Published on</dt>
                   <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
                     <time dateTime={date}>{formatDate(date, siteMetadata.locale)}</time>
                   </dd>
                 </dl>
+                <div>
+                  <h2 className="text-2xl font-bold leading-8 tracking-tight">
+                    <div className="text-gray-900 dark:text-gray-100">{title}</div>
+                  </h2>
+                </div>
               </Link>
             )
           })}
         </div>
       </div>
-      {siteMetadata.newsletter.provider && (
-        <div className="flex items-center justify-center pt-4">
-          <NewsletterForm />
-        </div>
-      )}
     </>
   )
 }

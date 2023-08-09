@@ -41,7 +41,7 @@ const NowPlayingSpotify = () => {
             </a>
           </>
         ) : (
-          <p className="font-medium text-gray-800 dark:text-gray-200">N'écoute pas</p>
+          <p className="font-medium text-gray-800 dark:text-gray-200">Aucune écoute</p>
         )}
         <span className="mx-2 text-gray-600 dark:text-gray-300">{' – '}</span>
         <p className="max-w-max truncate text-gray-600 dark:text-gray-300">{artist || 'Spotify'}</p>

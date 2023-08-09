@@ -60,10 +60,6 @@ module.exports = {
         13: '3.25rem',
         14: '3.5rem',
       },
-      fontFamily: {
-        body: ['Figtree', 'Inter'],
-        sans: ['Figtree', 'Inter', ...fontFamily.sans],
-      },
       colors: {
         primary: colors.blue,
         gray: colors.neutral,
