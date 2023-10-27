@@ -7,7 +7,7 @@ const HeroBanner = () => {
         <div className="grid items-center gap-12 lg:grid-cols-2">
           <div>
             <span className="mt-0 mb-16 text-2xl font-bold tracking-tight md:text-6xl xl:text-4xl text-black dark:text-[hsl(218,81%,95%)]">
-              <span className="mr-2">👋🏼</span> Bonjour, je m'appelle
+              <span className="mr-2 animate-wave inline-block span-wave">👋🏼</span> Bonjour, je m'appelle
             </span>
             <h1 className="mt-0 mb-6 text-7xl font-bold text-transparent text-8xl bg-clip-text bg-gradient-to-r from-primary-700 to-primary-400 tracking-tight md:text-6xl xl:text-7xl">
               Maxime
