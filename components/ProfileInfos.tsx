@@ -25,7 +25,7 @@ const ProfileInfos = () => {
             href="https://digitalrecruiters.com"
             target="_blank"
             rel="noreferrer"
-            className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+            className="hover:underline"
           >
             @DigitalRecruiters
           </a>
