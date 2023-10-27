@@ -1,5 +1,4 @@
 import siteMetadata from '@/data/siteMetadata'
-import { Briefcase } from 'lucide'
 
 const ProfileInfos = () => {
   return (
