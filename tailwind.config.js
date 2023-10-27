@@ -24,6 +24,26 @@ module.exports = {
           '50%': { transform: 'rotate(180deg)' },
           '100%': { transform: 'rotate(360deg)' },
         },
+        wave: {
+          '0%': {
+            transform: 'rotate(0deg)',
+          },
+          '10%': {
+            transform: 'rotate(10deg)',
+          },
+          '20%': {
+            transform: 'rotate(0deg)',
+          },
+          '30%': {
+            transform: 'rotate(10deg)',
+          },
+          '40%': {
+            transform: 'rotate(0deg)',
+          },
+          '100%': {
+            transform: 'rotate(0deg)',
+          },
+        },
         'music-bar-1': {
           '0%, 100%': { height: '0%' },
           '50%': { height: '70%' },
@@ -50,6 +70,7 @@ module.exports = {
         'music-bar-2': 'music-bar-2 .8s linear infinite',
         'music-bar-3': 'music-bar-3 .8s linear infinite',
         'music-bar-4': 'music-bar-4 .8s linear infinite',
+        wave: 'wave 2s infinite',
       },
       spacing: {
         '9/16': '56.25%',

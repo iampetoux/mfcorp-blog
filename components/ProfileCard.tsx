@@ -29,8 +29,8 @@ const ProfileCard = () => {
           Développeur FullStack
         </p>
         <ProfileInfos />
-        <NowPlayingSpotify />
       </div>
+      <NowPlayingSpotify />
     </div>
   )
 }
