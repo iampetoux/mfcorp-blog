@@ -7,7 +7,7 @@ import ThemeSwitch from './ThemeSwitch'
 
 const Header = () => {
   return (
-    <header className="supports-backdrop-blur:bg-white/95 sticky top-0 z-40 py-3 backdrop-blur dark:bg-grey-900 border-b border-gray-100 dark:border-gray-800">
+    <header className="supports-backdrop-blur:bg-white/95 sticky top-0 z-40 py-3 bg-white/75 backdrop-blur dark:bg-gray-900/75">
       <div className="mx-auto flex items-center justify-between max-w-3xl px-3 xl:max-w-5xl xl:px-0">
         <div>
           <Link href="/" aria-label={siteMetadata.headerTitle}>
