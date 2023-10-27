@@ -9,7 +9,7 @@ const NowPlayingSpotify = () => {
   })
   const { songUrl, title, artist } = response.data || {}
   return (
-    <div className="flex items-center py-2">
+    <div className="flex justify-center items-center py-2 bg-gray-100 dark:bg-gray-900 px-2 border-t-2 border-spotify">
       <svg
         className="h-5.5 w-5.5 flex-shrink-0 text-spotify"
         role="img"
